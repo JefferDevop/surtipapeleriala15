@@ -1,0 +1,124 @@
+.topBar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.1rem 1.5rem 0.1rem 0.5rem;
+  z-index: 5;
+  background-color: rgb(44, 27, 193);
+
+  .searchOption {    
+    display: flex;
+    input {
+      display: none;
+      left: 0;
+      top: 0;
+      border: 0;
+      padding: 0px 12px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50px 0 0 50px;
+      color: rgb(96, 95, 95);
+      font-size: 15px;
+      text-transform: uppercase;
+      &.active {
+        display: flex;
+        width: 10rem;
+      }
+    }
+
+    .search {
+      border: solid 1px rgb(255, 255, 255);
+      position: relative;
+      // right: 2.3rem;
+      background-color: rgb(44, 27, 193);
+      border-radius: 0 50px 50px 0;
+
+
+      svg {
+        margin: 0;
+        color: white;
+      }
+    }
+  }
+
+  > a {
+    > img {
+      height: 4.5rem;
+    }
+
+    > svg {
+      color: white;
+    }
+  }
+}
+
+.left {
+  display: flex;
+}
+
+.right {
+  display: flex;
+}
+
+.icon {
+  text-align: end;
+  a {
+    color: rgb(255, 255, 255);
+   
+  }
+  svg {
+   margin-bottom: 5px;
+  }
+}
+
+.busqueda {
+  margin-top: 14vh;
+  background-color: white;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  min-height: 200vh;
+}
+
+.list {
+  background-color: rgb(240, 240, 240);
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+
+  &__product {
+    background-color: rgb(255, 255, 255);
+  
+    border-radius: 5px;
+
+    img {
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      height: 18rem;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    h5 {
+      font-size: 18px;
+      padding: 10px 5px 5px 10px;
+    }
+
+    h6 {
+      font-size: 15px;   
+      padding: 0px 5px 10px 10px;
+    }
+  }
+}
+
+.category {
+
+  padding: 50px 10px 10px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  h2 {
+    font-size: 25px !important;
+  }
+}
