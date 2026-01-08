@@ -64,7 +64,7 @@ export function TopBar() {
       <div className={styles.topBar}>
 
 
-        <Link href="/" onClick={() => changeStatus()}>
+        <Link href="/" >
           <CardImg
             src="/image/logo.jpeg"
             alt="surtipapeleriala15"
