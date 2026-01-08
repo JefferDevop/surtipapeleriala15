@@ -62,21 +62,36 @@ export function TopBar() {
   return (
     <>
       <div className={styles.topBar}>
+
+
         <Link href="/" onClick={() => changeStatus()}>
           <CardImg
-            src="/image/logo.png"
-            alt="MIHOGARDISTRIBUCIONES"
+            src="/image/logo.jpeg"
+            alt="surtipapeleriala15"
           />{" "}
         </Link>
 
-        <div className={styles.icon}>
+
+
+ <div className={styles.advertisement} >
+      <p>SURTIPAPELERIA LA 15</p>
+      <p>CATÁLOGO 2026</p>
+    </div>
+
+
+
+        {/* <div className={styles.icon}> */}
         {/* <div>
             <Link href="/favorite" onClick={() => changeStatus()}>
               <AiOutlineHeart size={30} />
             </Link>
           </div> */}
 
-          <div className={styles.searchOption}>
+
+
+
+
+          {/* <div className={styles.searchOption}>
             <input
               onFocus={updateState}
               onBlur={updateState}
@@ -85,23 +100,23 @@ export function TopBar() {
               className={classNames(styles.searchOption, {
                 [styles.active]: showSearch,
               })}
-            />
+            /> */}
 
-            <button className={styles.search} onClick={openCloseSearch}>
+            {/* <button className={styles.search} onClick={openCloseSearch}>
               <AiOutlineSearch size={30} />
-            </button>
-          </div>
+            </button> */}
+          {/* </div> */}
 
         
 
-        </div>
+        {/* </div> */}
       </div>
 
-      {estado && (
+      {/* {estado && (
         <div className={styles.busqueda}>
           <Search products={finds} />
         </div>
-      )}
+      )} */}
     </>
   );
 }

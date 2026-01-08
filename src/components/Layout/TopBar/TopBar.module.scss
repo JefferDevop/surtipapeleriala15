@@ -6,9 +6,17 @@
   width: 100%;
   padding: 0.1rem 1.5rem 0.1rem 0.5rem;
   z-index: 5;
-  background-color: rgb(44, 27, 193);
+  background: linear-gradient(90deg, #d3ffdd 10%, #9cbbff 20%);
 
-  .searchOption {    
+  .advertisement {
+    p {
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  .searchOption {
     display: flex;
     input {
       display: none;
@@ -33,7 +41,6 @@
       // right: 2.3rem;
       background-color: rgb(44, 27, 193);
       border-radius: 0 50px 50px 0;
-
 
       svg {
         margin: 0;
@@ -65,10 +72,9 @@
   text-align: end;
   a {
     color: rgb(255, 255, 255);
-   
   }
   svg {
-   margin-bottom: 5px;
+    margin-bottom: 5px;
   }
 }
 
@@ -90,7 +96,7 @@
 
   &__product {
     background-color: rgb(255, 255, 255);
-  
+
     border-radius: 5px;
 
     img {
@@ -107,14 +113,13 @@
     }
 
     h6 {
-      font-size: 15px;   
+      font-size: 15px;
       padding: 0px 5px 10px 10px;
     }
   }
 }
 
 .category {
-
   padding: 50px 10px 10px 10px;
   text-align: center;
   text-transform: uppercase;
