@@ -48,11 +48,11 @@ export function Listproducts(props) {
                 <div className={styles.title}>
                   <CardSubtitle>
                     {product.productData.price1 > 0 && (
-                      <h5> $ {product.productData.price1}</h5>
+                      <h5>Unidad: $ {product.productData.price1}</h5>
                     )}
 
                     {product.productData.price2 > 0 && (
-                      <h5> $ {product.productData.price2}</h5>
+                      <h5>mayor: $ {product.productData.price2}</h5>
                     )}
                   </CardSubtitle>
 
