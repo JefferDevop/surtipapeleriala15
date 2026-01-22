@@ -15,8 +15,6 @@ export function Listproducts(props) {
   const { products, title } = props;
   const { user } = useAuth();
 
-
-  
   return (
     <>
       <div className={styles.category}>
@@ -48,15 +46,13 @@ export function Listproducts(props) {
                 </CardTitle>
 
                 <div className={styles.title}>
-                  
                   <CardSubtitle>
-                    {product.productData.price1 !== null || product.productData.price1 !== 0  (
-                      <>
+                    {product.productData.price1 > 0 && (
                       <h5> $ {product.productData.price1}</h5>
-                      <h5> $ {product.productData.price2}</h5>
-                      
-                      </>
+                    )}
 
+                    {product.productData.price2 > 0 && (
+                      <h5> $ {product.productData.price2}</h5>
                     )}
                   </CardSubtitle>
 
