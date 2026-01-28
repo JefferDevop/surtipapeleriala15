@@ -11,7 +11,7 @@ export function Contact(props) {
         <div className={styles.phone}>
           <h5>Líneas de atención</h5>
           <ul>
-            <li>(+57) 314 5741 972</li>
+            <li>(+57) 314 5721 972</li>
             <li>(+57) 312 6840 386</li>
           </ul>
         </div>
